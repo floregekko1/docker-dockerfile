@@ -1,3 +1,7 @@
 FROM fedora:latest
 RUN dnf -y update
-#installer la derniere image de fedora et mettre à jour
+RUN dnf install wget tar git -y
+WORKDIR /home/floranana/Documents/Docs
+COPY Chinook_Sqlite.sqlite /home/floranana/Documents/Docs
+COPY jointure.py /home/floranana/Documents/Docs
+CMD ["python3","jointure.py"]
