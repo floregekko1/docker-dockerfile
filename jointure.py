@@ -2,7 +2,7 @@
 
 import sqlite3
 
-db = sqlite3.connect("/home/Docus/Chinook_Sqlite.sqlite")
+db = sqlite3.connect("/home/docus/Chinook_Sqlite.sqlite")
 
 db.row_factory = sqlite3.Row
 
